@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f2f5;
+    height: 100dvh;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: min(20px, 5vw);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#formSubtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#formMessage {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: green;
+    text-align: center;
+}
+
+
+.login-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: min(20px, 5vw);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar {
+    font-size: 70px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    padding: min(8px, 4%);
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.input-group input {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    width: 100%;
+    padding: 10px 35px 10px 35px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #3498db;
+}
+
+.toggle-password {
+    right: 10px;
+    left: auto;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+#welcomeScreen h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#welcomeScreen button {
+    background: #e74c3c;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#welcomeScreen button:hover {
+    background: #c0392b;
+}
+
+.switch-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Forms */
+.form {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.form.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
