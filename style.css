@@ -16,8 +16,7 @@ body {
 .form-container {
     width: 100%;
     max-width: 400px;
-    padding: min(20px, 5vw);
-    background: #fff;
+    padding: min(15px, 8%);
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -36,8 +35,9 @@ body {
 }
 
 
-.login-card {
-    background: #fff;
+.login-card {   
+    width: 100%;
+    max-width: 400px;
     border-radius: 12px;
     padding: min(20px, 5vw);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
